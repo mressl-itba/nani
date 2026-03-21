@@ -28,7 +28,7 @@ La idea general es:
 
 Para esto utilizaremos una técnica clásica: **perfiles de trigramas**.
 
-# Concepto clave: perfiles de trigramas
+## Concepto clave: perfiles de trigramas
 
 Un **trigrama** es una subcadena de tres caracteres consecutivos.
 
@@ -111,7 +111,7 @@ Una posible estrategia:
     * Compara el texto contra todos los idiomas disponibles
     * Elige el de mayor similitud
 
-# Exploración y evaluación
+## Exploración y evaluación
 
 Una vez que tu sistema funcione, reflexiona:
 
