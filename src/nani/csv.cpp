@@ -9,9 +9,9 @@
 
 #include "csv.h"
 
-bool LoadCSVTable(const std::string path, CSVTable &csv_table)
+bool LoadCSVTable(const std::string filepath, CSVTable &csv_table)
 {
-    std::ifstream file(path, std::ios_base::binary);
+    std::ifstream file(filepath, std::ios_base::binary);
 
     if (!file.is_open())
         return false;
@@ -56,9 +56,9 @@ bool LoadCSVTable(const std::string path, CSVTable &csv_table)
     return true;
 }
 
-bool SaveCSVTable(const std::string path, CSVTable &csv_table)
+bool SaveCSVTable(const std::string filepath, CSVTable &csv_table)
 {
-    std::ofstream file(path, std::ios_base::binary);
+    std::ofstream file(filepath, std::ios_base::binary);
 
     if (!file.is_open())
         return false;

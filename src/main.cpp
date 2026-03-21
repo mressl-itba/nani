@@ -8,9 +8,6 @@
  */
 
 #include <iostream>
-#include <fstream>
-#include <map>
-#include <string>
 
 #include "ui.h"
 #include "nani/nani.h"

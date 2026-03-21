@@ -24,7 +24,7 @@
 using Trigram = std::array<char, 3>;
 
 /**
- * @brief Type for representing a language profile (trigrams)
+ * @brief Type for representing a language profile (map of trigrams to their frequencies)
  */
 using LanguageProfile = std::map<Trigram, float>;
 

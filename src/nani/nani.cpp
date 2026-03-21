@@ -8,6 +8,8 @@
  */
 
 #include <iostream>
+#include <cmath>
+#include <limits>
 
 #include "csv.h"
 #include "nani.h"
@@ -20,7 +22,7 @@
  * 
  * @return true if the trigram was decoded successfully, false otherwise
  */
-static bool DecodeTrigram(std::string encoded_trigram, Trigram &trigram)
+static bool DecodeTrigram(const std::string &encoded_trigram, Trigram &trigram)
 {
     if (encoded_trigram.size() != 6)
         return false;
@@ -28,15 +30,9 @@ static bool DecodeTrigram(std::string encoded_trigram, Trigram &trigram)
     for (size_t i = 0; i < 3; i++)
     {
         std::string byteString = encoded_trigram.substr(i * 2, 2);
-        try
-        {
-            trigram[i] = std::stoul(byteString, nullptr, 16);
-        }
-        catch (const std::exception &e)
-        {
-            std::cerr << "Error decoding trigram: " << e.what() << std::endl;
-            return false;
-        }
+
+        uint8_t value = std::stoi(byteString, nullptr, 16);
+        trigram[i] = value;
     }
 
     return true;
@@ -44,6 +40,9 @@ static bool DecodeTrigram(std::string encoded_trigram, Trigram &trigram)
 
 bool LoadLanguageProfiles(LanguageProfiles &language_profiles, LanguageNames &language_names)
 {
+    language_profiles.clear();
+    language_names.clear();
+
     // Reads language codes and their names
     std::cout << "Reading language codes..." << std::endl;
 
@@ -64,8 +63,9 @@ bool LoadLanguageProfiles(LanguageProfiles &language_profiles, LanguageNames &la
 
         std::cout << "Reading trigram profile for language code \"" << language_code << "\"..." << std::endl;
 
+        std::string language_profiles_filepath = LANGUAGE_PROFILES_PATH + language_code + ".csv";
         CSVTable language_profiles_table;
-        if (!LoadCSVTable(LANGUAGE_PROFILES_PATH + language_code + ".csv", language_profiles_table))
+        if (!LoadCSVTable(language_profiles_filepath, language_profiles_table))
             return false;
 
         LanguageProfile language_profile;
