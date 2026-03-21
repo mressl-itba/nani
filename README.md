@@ -95,7 +95,7 @@ Una posible estrategia:
     * Calcula la suma de los cuadrados de las frecuencias
     * Divide cada frecuencia por la raíz cuadrada de esa suma
 
-    Esto convierte el perfil en un vector normalizado.
+    Esto convierte el perfil en un vector normalizado (de módulo 1).
 
 3. Comparación de perfiles
 
