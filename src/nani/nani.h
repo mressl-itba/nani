@@ -14,10 +14,19 @@
 #include <map>
 #include <string>
 
+// File paths for resources
+#define LANGUAGE_PROFILES_PATH "resources/language_profiles/"
+#define LANGUAGE_NAMES_FILE "resources/language_names.csv"
+
+/**
+ * @brief Type for representing a trigram (array of 3 characters)
+ */
+using Trigram = std::array<char, 3>;
+
 /**
  * @brief Type for representing a language profile (trigrams)
  */
-using LanguageProfile = std::map<std::array<char, 3>, float>;
+using LanguageProfile = std::map<Trigram, float>;
 
 /**
  * @brief Type for representing language codes and their language profiles

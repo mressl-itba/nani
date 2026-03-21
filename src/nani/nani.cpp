@@ -12,14 +12,6 @@
 #include "csv.h"
 #include "nani.h"
 
-const std::string LANGUAGECODE_NAMES_FILE = "resources/language_names.csv";
-const std::string TRIGRAMS_PATH = "resources/trigrams/";
-
-/**
- * @brief Type for representing a trigram (array of 3 characters)
- */
-using Trigram = std::array<char, 3>;
-
 /**
  * @brief Decodes a trigram from its hexadecimal string representation
  * 
@@ -56,7 +48,7 @@ bool LoadLanguageProfiles(LanguageProfiles &language_profiles, LanguageNames &la
     std::cout << "Reading language codes..." << std::endl;
 
     CSVTable language_codes;
-    if (!LoadCSVTable(LANGUAGECODE_NAMES_FILE, language_codes))
+    if (!LoadCSVTable(LANGUAGE_NAMES_FILE, language_codes))
         return false;
 
     // Reads trigram profiles for each language code
@@ -73,7 +65,7 @@ bool LoadLanguageProfiles(LanguageProfiles &language_profiles, LanguageNames &la
         std::cout << "Reading trigram profile for language code \"" << language_code << "\"..." << std::endl;
 
         CSVTable language_profiles_table;
-        if (!LoadCSVTable(TRIGRAMS_PATH + language_code + ".csv", language_profiles_table))
+        if (!LoadCSVTable(LANGUAGE_PROFILES_PATH + language_code + ".csv", language_profiles_table))
             return false;
 
         LanguageProfile language_profile;
