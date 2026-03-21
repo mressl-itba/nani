@@ -70,7 +70,7 @@ Esto simplifica la implementación, aunque tiene implicancias interesantes que d
 Debes implementar la función principal:
 
 ```cpp
-std::string IdentifyLanguage(const char *text, LanguageProfiles *languageProfiles);
+std::string IdentifyLanguage(const char *text, LanguageProfiles *language_profiles);
 ```
 
 La función debe devolver el código del lenguaje detectado.
