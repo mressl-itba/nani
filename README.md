@@ -99,7 +99,7 @@ Una posible estrategia:
 
     Para comparar dos perfiles, puedes usar la **similitud coseno**:
 
-    * Multiplica las frecuencias de los trigramas en común
+    * Multiplica las frecuencias normalizadas de los trigramas en común
     * Suma los productos
 
     Sólo importan los trigramas compartidos.
