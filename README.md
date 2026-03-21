@@ -46,8 +46,6 @@ los trigramas (con sus frecuencias) son:
 * "Y B" → 1
 * " BA" → 1
 * "BAN" → 1
-* "NDA" → 1
-* "DAN" → 1
 
 Cada texto puede representarse como un **perfil de trigramas**:
 
