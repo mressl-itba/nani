@@ -115,7 +115,7 @@ Una posible estrategia:
 
 Una vez que tu sistema funcione, reflexiona:
 
-* ¿Cuál es la complejidad computacional del algoritmo?
+* ¿Cuál es la complejidad computacional de tu algoritmo?
 * ¿Qué tan bien distingue idiomas similares?
 * ¿Qué ocurre con textos muy cortos?
 * ¿Qué pasa con idiomas que comparten alfabeto?
