@@ -1,41 +1,100 @@
-# Prerequisites
-*.d
+# =========================
+# Build directories
+# =========================
+/build/
+/build-*/
+/cmake-build-*/
+/out/
+/bin/
+/lib/
 
-# Compiled Object files
-*.slo
-*.lo
+# =========================
+# CMake generated files
+# =========================
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+CTestTestfile.cmake
+_deps/
+
+# CMake 3.15+
+CMakeUserPresets.json
+
+# =========================
+# Make / Ninja
+# =========================
+Makefile
+*.make
+*.ninja
+.ninja_deps
+.ninja_log
+
+# =========================
+# Visual Studio
+# =========================
+.vs/
+*.vcxproj*
+*.sln
+*.VC.db
+*.VC.opendb
+
+# =========================
+# CLion / JetBrains
+# =========================
+.idea/
+cmake-build-*/
+
+# =========================
+# VS Code
+# =========================
+.vscode/
+
+# =========================
+# Xcode
+# =========================
+*.xcodeproj/
+*.xcworkspace/
+DerivedData/
+
+# =========================
+# Compiler artifacts
+# =========================
 *.o
 *.obj
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Linker files
-*.ilk
-
-# Debugger Files
-*.pdb
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
+*.lo
 *.la
 *.a
 *.lib
-
-# Executables
+*.dll
+*.so
+*.so.*
+*.dylib
 *.exe
 *.out
 *.app
 
-# debug information files
-*.dwo
+# =========================
+# Debug / profiling
+# =========================
+*.dSYM/
+*.gcno
+*.gcda
+*.gcov
+*.prof
+*.log
+
+# =========================
+# OS generated files
+# =========================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# =========================
+# Temporary files
+# =========================
+*~
+*.swp
+*.swo
