@@ -132,9 +132,9 @@ Responde estas preguntas en `ENTREGA.md`.
 ## Bonus points 🚀
 
 * Investiga en profundidad la similitud coseno
+* Mejora la performance para textos grandes
 * Añade nuevos “idiomas” (por ejemplo: guaraní, C++, Python...)
 * Analiza el impacto de usar bigramas vs. trigramas
-* Mejora la performance para textos grandes
 * Experimenta con otras métricas de similitud
 
 Documenta todo en `ENTREGA.md`.
