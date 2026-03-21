@@ -22,7 +22,7 @@
  *
  * @return A vector of chars containing the file's contents, or an empty vector if the file could not be loaded.
  */
-static bool LoadFile(const std::string &path, std::vector<char> &buffer)
+static bool LoadFile(const std::string path, std::vector<char> &buffer)
 {
     std::ifstream file(path, std::ios::binary | std::ios::ate);
     if (!file.is_open())
