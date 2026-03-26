@@ -59,7 +59,7 @@ Distintos idiomas presentan **distribuciones de trigramas muy diferentes**, lo q
 En este trabajo:
 
 * Trabaja directamente con bytes (`char`).
-* No es necesario decodificar UTF-8 (si no sabes qué implica esto, consúltalo).
+* No es necesario decodificar UTF-8 (si no sabes qué implica esto, investígalo).
 
 Esto simplifica la implementación, aunque tiene implicancias interesantes que deberás analizar luego.
 
