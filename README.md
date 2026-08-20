@@ -6,7 +6,7 @@ En esta práctica vas a hacer **identificación automática de lenguajes**.
 
 ![Logo](img/logo.png)
 
-Año 2027. Lograste un intercambio en una universidad de Asia. Todo parecía soñado… hasta que llegaste.
+Año 2028. Lograste un intercambio en una universidad de Asia. Todo parecía soñado… hasta que llegaste.
 
 Los carteles, los mails institucionales, el campus virtual… **todo está en idiomas que no reconoces**. Algunos parecen japonés, otros coreano, otros quizás chino… o algo completamente distinto.
 
