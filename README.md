@@ -137,6 +137,18 @@ Responde estas preguntas en `ENTREGA.md`.
 
 Documenta todo en `ENTREGA.md`.
 
+## Uso de IA
+
+Puedes usar asistentes de IA, pero con una condición: **todo queda documentado**.
+
+* Registra **todos** los prompts que le hagas a la IA, transcriptos textualmente (copy & paste, no un resumen).
+* Indica qué herramienta o modelo usaste en cada caso.
+* Comenta brevemente qué hiciste con la respuesta: si la usaste tal cual, si la modificaste, o si la descartaste (y por qué).
+
+Deja todo esto en la sección correspondiente de `ENTREGA.md`.
+
+No documentar los prompts se considera una entrega incompleta.
+
 ## Epílogo
 
 Después de varios días… tu sistema empieza a funcionar.
