@@ -3,9 +3,16 @@ project(nani)
 
 set(CMAKE_CXX_STANDARD 20)
 
-find_package(raylib CONFIG REQUIRED)
+include(FetchContent)
 
-add_executable(nani 
+FetchContent_Declare(
+    raylib
+    URL https://github.com/raysan5/raylib/archive/refs/tags/6.0.tar.gz
+)
+
+FetchContent_MakeAvailable(raylib)
+
+add_executable(nani
     src/main.cpp
     src/ui.cpp
     src/nani/csv.cpp
