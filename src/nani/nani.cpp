@@ -7,8 +7,9 @@
  * @author The (not so) helpful university
  */
 
-#include <iostream>
 #include <cmath>
+#include <cstdint>
+#include <iostream>
 #include <limits>
 
 #include "csv.h"
